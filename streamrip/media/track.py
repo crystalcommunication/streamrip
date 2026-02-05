@@ -122,7 +122,7 @@ class Track(Media):
         )
 
         # Check if the full path is too long and truncate if necessary
-        max_path_length = 250  # Leave some buffer for filesystem limits
+        max_path_length = 150  # Leave some buffer for filesystem limits
         if len(full_path) > max_path_length:
             # Calculate how much we need to truncate the track_path
             excess = len(full_path) - max_path_length
